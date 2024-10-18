@@ -14,14 +14,15 @@ return {
     end,
     keys = {
       { "<leader><space>", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+      { "<leader>fs", LazyVim.pick("live_grep"), desc = "Grep (Root Dir)" },
       {
-        "<leader>fs",
+        "<leader>/",
         function()
           require("telescope").extensions.live_grep_args.live_grep_args({
             search_dirs = { vim.fn.getcwd() },
           })
         end,
-        desc = "Live Grep args",
+        desc = "Grep (cwd)",
       },
     },
   },
