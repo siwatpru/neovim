@@ -1,9 +1,24 @@
 return {
   {
     "folke/tokyonight.nvim",
-    lazy = true,
     opts = {
-      style = "night",
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
+  },
+  {
+    "folke/noice.nvim",
+    opts = {
+      views = {
+        mini = {
+          win_options = {
+            winblend = 0,
+          },
+        },
+      },
     },
   },
   -- {
