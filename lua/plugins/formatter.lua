@@ -8,6 +8,7 @@ return {
         "shfmt",
         "flake8",
         "black",
+        "prettier",
       },
     },
   },
@@ -16,6 +17,10 @@ return {
     opts = {
       formatters_by_ft = {
         ["python"] = { "black" },
+        ["typescript"] = { "prettier" },
+        ["typescriptreact"] = { "prettier" },
+        ["javascript"] = { "prettier" },
+        ["javascriptreact"] = { "prettier" },
       },
       formatters = {
         black = {
