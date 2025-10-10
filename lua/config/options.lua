@@ -4,3 +4,4 @@
 vim.opt.relativenumber = false
 vim.o.cursorline = false
 vim.g.snacks_animate = false
+vim.opt.diffopt:append("linematch:60")
