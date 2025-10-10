@@ -7,7 +7,7 @@ return {
         "shellcheck",
         "shfmt",
         "flake8",
-        "black",
+        "ruff",
         "prettier",
       },
     },
@@ -16,16 +16,11 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        ["python"] = { "black" },
+        ["python"] = { "ruff" },
         ["typescript"] = { "prettier" },
         ["typescriptreact"] = { "prettier" },
         ["javascript"] = { "prettier" },
         ["javascriptreact"] = { "prettier" },
-      },
-      formatters = {
-        black = {
-          prepend_args = { "--line-length", "127", "--preview" },
-        },
       },
     },
   },
