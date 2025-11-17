@@ -1,0 +1,615 @@
+
+==============================================================================
+blink.cmp:                                                                1 ⚠️
+
+System ~
+- ✅ OK curl is installed
+- ✅ OK git is installed
+- ✅ OK Your system is supported by pre-built binaries (aarch64-apple-darwin)
+- ✅ OK blink_cmp_fuzzy lib is downloaded/built
+
+Sources ~
+- ⚠️ WARNING Some providers may show up as "disabled" but are enabled dynamically (i.e. cmdline)
+
+Default sources ~
+- lsp (blink.cmp.sources.lsp)
+- path (blink.cmp.sources.path)
+- snippets (blink.cmp.sources.snippets)
+- buffer (blink.cmp.sources.buffer)
+- supermaven (blink.compat.source)
+
+Cmdline sources ~
+- buffer (blink.cmp.sources.buffer)
+- cmdline (blink.cmp.sources.cmdline)
+
+Disabled sources ~
+- omni (blink.cmp.sources.complete_func)
+- lazydev (lazydev.integrations.blink)
+
+==============================================================================
+lazy:                                                                     2 ⚠️
+
+lazy.nvim ~
+- {lazy.nvim} version `11.17.1`
+- ✅ OK {git} `version 2.39.5 (Apple Git-154)`
+- ✅ OK no existing packages found by other package managers
+- ✅ OK packer_compiled.lua not found
+
+luarocks ~
+- checking `luarocks` installation
+- ✅ OK no plugins require `luarocks`, so you can ignore any warnings below
+- ✅ OK {luarocks} `/opt/homebrew/bin/luarocks 3.12.2`
+- ⚠️ WARNING `lua` version `5.1` needed, but found `Lua 5.4.8  Copyright (C) 1994-2025 Lua.org, PUC-Rio`
+- ⚠️ WARNING {lua5.1} or {lua} or {lua-5.1} version `5.1` not installed
+
+==============================================================================
+lazyvim:                                                                    ✅
+
+LazyVim ~
+- ✅ OK Using Neovim >= 0.11.2
+- ✅ OK `git` is installed
+- ✅ OK `rg` is installed
+- ✅ OK `fd` is installed
+- ✅ OK `lazygit` is installed
+- ✅ OK `fzf` is installed
+- ✅ OK `curl` is installed
+
+==============================================================================
+lspconfig:                                                                  ✅
+
+- Skipped. This healthcheck is redundant with `:checkhealth vim.lsp`.
+
+==============================================================================
+mason:                                                                    1 ⚠️
+
+mason.nvim ~
+- ⚠️ WARNING mason.nvim version v2.0.1
+  - ADVICE:
+    - The latest version of mason.nvim is: v2.1.0
+- ✅ OK PATH: prepend
+- ✅ OK Providers: 
+    mason.providers.registry-api
+    mason.providers.client
+- ✅ OK neovim version >= 0.10.0
+
+mason.nvim [Registries] ~
+- ✅ OK Registry `github.com/mason-org/mason-registry version: 2025-10-21-placid-beach` is installed.
+
+mason.nvim [Core utils] ~
+- ✅ OK unzip: `UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send`
+- ✅ OK wget: `GNU Wget 1.25.0, a non-interactive network retriever.`
+- ✅ OK curl: `curl 8.7.1 (x86_64-apple-darwin24.0) libcurl/8.7.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.12 nghttp2/1.62.0`
+- ✅ OK gzip: `Apple gzip 448.0.3`
+- ✅ OK tar: `bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.12 liblzma/5.4.3 bz2lib/1.0.8 `
+- ✅ OK bash: `GNU bash, version 5.2.37(1)-release (aarch64-apple-darwin24.0.0)`
+- ✅ OK sh: `Ok`
+
+mason.nvim [Languages] ~
+- ✅ OK Ruby: `ruby 3.4.7 (2025-10-08 revision 7a5688e2a2) +PRISM [arm64-darwin24]`
+- ✅ OK cargo: `cargo 1.90.0 (Homebrew)`
+- ✅ OK Go: `go version go1.23.3 darwin/arm64`
+- ✅ OK luarocks: `/opt/homebrew/bin/luarocks 3.12.2`
+- ✅ OK RubyGem: `3.6.9`
+- ✅ OK node: `v22.20.0`
+- ✅ OK PHP: `PHP 8.4.1 (cli) (built: Nov 21 2024 08:58:37) (NTS)`
+- ✅ OK npm: `10.9.3`
+- ✅ OK python: `Python 3.13.7`
+- ✅ OK Composer: `Composer version 2.8.3 2024-11-17 13:13:04`
+- ✅ OK java: `java version "23.0.1" 2024-10-15`
+- ✅ OK julia: `julia version 1.12.1`
+- ✅ OK pip: `pip 25.2 from /opt/homebrew/lib/python3.13/site-packages/pip (python 3.13)`
+- ✅ OK javac: `javac 23.0.1`
+- ✅ OK python venv: `Ok`
+
+==============================================================================
+mason-lspconfig:                                                            ✅
+
+mason-lspconfig.nvim ~
+- ✅ OK Neovim v0.11
+- ✅ OK mason.nvim v2
+
+==============================================================================
+noice:                                                                      ✅
+
+noice.nvim ~
+- ✅ OK *Neovim* >= 0.9.0
+- ✅ OK You're using a GUI that should work ok
+- ✅ OK *vim.go.lazyredraw* is not enabled
+- ✅ OK `snacks.nvim` is installed
+- ✅ OK {TreeSitter} `vim` parser is installed
+- ✅ OK {TreeSitter} `regex` parser is installed
+- ✅ OK {TreeSitter} `lua` parser is installed
+- ✅ OK {TreeSitter} `bash` parser is installed
+- ✅ OK {TreeSitter} `markdown` parser is installed
+- ✅ OK {TreeSitter} `markdown_inline` parser is installed
+- ✅ OK `vim.notify` is set to **Noice**
+- ✅ OK `vim.lsp.buf.hover` is set to **Noice**
+- ✅ OK `vim.lsp.buf.signature_help` is set to **Noice**
+- ✅ OK `vim.lsp.util.convert_input_to_markdown_lines` is set to **Noice**
+- ✅ OK `vim.lsp.util.stylize_markdown` is set to **Noice**
+
+==============================================================================
+nvim-treesitter:                                                            ✅
+
+Requirements ~
+- ✅ OK Neovim was compiled with tree-sitter runtime ABI version 15 (required >=13).
+- ✅ OK tree-sitter-cli 0.25.10 (/Users/sp/.local/share/nvim/mason/bin/tree-sitter)
+- ✅ OK node 22.20.0 (/Users/sp/.volta/bin/node)
+- ✅ OK tar 3.5.3 (/usr/bin/tar)
+- ✅ OK curl 8.7.1 (/usr/bin/curl)
+  curl 8.7.1 (x86_64-apple-darwin24.0) libcurl/8.7.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.12 nghttp2/1.62.0
+  Release-Date: 2024-03-27
+  Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt pop3 pop3s rtsp smb smbs smtp smtps telnet tftp
+  Features: alt-svc AsynchDNS GSS-API HSTS HTTP2 HTTPS-proxy IPv6 Kerberos Largefile libz MultiSSL NTLM SPNEGO SSL threadsafe UnixSockets
+
+OS Info ~
+- machine: arm64
+- version: Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+- sysname: Darwin
+- release: 24.1.0
+
+Install directory for parsers and queries ~
+- /Users/sp/.local/share/nvim/site/
+- ✅ OK is writable.
+- ✅ OK is in runtimepath.
+
+Installed languages     H L F I J ~
+- astro                 ✓ ✓ ✓ ✓ ✓
+- bash                  ✓ ✓ ✓ . ✓
+- c                     ✓ ✓ ✓ ✓ ✓
+- css                   ✓ . ✓ ✓ ✓
+- diff                  ✓ . ✓ . ✓
+- dockerfile            ✓ . . . ✓
+- dtd                   ✓ ✓ ✓ . ✓
+- ecma
+- git_config            ✓ . ✓ . ✓
+- go                    ✓ ✓ ✓ ✓ ✓
+- gomod                 ✓ . . . ✓
+- gosum                 ✓ . . . .
+- gowork                ✓ . . . ✓
+- graphql               ✓ . . ✓ ✓
+- hcl                   ✓ . ✓ ✓ ✓
+- html                  ✓ ✓ ✓ ✓ ✓
+- html_tags
+- http                  ✓ . ✓ . ✓
+- javascript            ✓ ✓ ✓ ✓ ✓
+- jsdoc                 ✓ . . . .
+- json                  ✓ ✓ ✓ ✓ .
+- json5                 ✓ . . . ✓
+- jsonc                 ✓ ✓ ✓ ✓ ✓
+- jsx
+- kulala_http
+- lua                   ✓ ✓ ✓ ✓ ✓
+- luadoc                ✓ . . . .
+- luap                  ✓ . . . .
+- markdown              ✓ . ✓ ✓ ✓
+- markdown_inline       ✓ . . . ✓
+- ninja                 ✓ . ✓ ✓ ✓
+- printf                ✓ . . . .
+- python                ✓ ✓ ✓ ✓ ✓
+- query                 ✓ ✓ ✓ ✓ ✓
+- regex                 ✓ . . . .
+- ron                   ✓ ✓ ✓ ✓ ✓
+- rst                   ✓ ✓ . . ✓
+- rust                  ✓ ✓ ✓ ✓ ✓
+- terraform             ✓ . ✓ ✓ ✓
+- toml                  ✓ ✓ ✓ ✓ ✓
+- tsx                   ✓ ✓ ✓ ✓ ✓
+- typescript            ✓ ✓ ✓ ✓ ✓
+- vim                   ✓ ✓ ✓ . ✓
+- vimdoc                ✓ . . . ✓
+- xml                   ✓ ✓ ✓ ✓ ✓
+- yaml                  ✓ ✓ ✓ ✓ ✓
+
+  Legend: H[ighlights], L[ocals], F[olds], I[ndents], In[J]ections ~
+
+==============================================================================
+snacks:                                                            10 ⚠️  3 ❌
+
+Snacks ~
+- ✅ OK setup called
+
+Snacks.bigfile ~
+- ✅ OK setup {enabled}
+
+Snacks.dashboard ~
+- ✅ OK setup {enabled}
+- ✅ OK setup ran
+- ✅ OK dashboard opened
+
+Snacks.explorer ~
+- ⚠️ WARNING setup {disabled}
+
+Snacks.image ~
+- ⚠️ WARNING setup {disabled}
+- ✅ OK 'ghostty' `Ghostty 1.2.2`
+- ✅ OK 'magick' `Version: ImageMagick 7.1.2-7 Q16-HDRI aarch64 23405 https://imagemagick.org`
+- ✅ OK 'convert' `WARNING: The convert command is deprecated in IMv7, use "magick" instead of "convert" or "magick convert"`
+- ✅ OK `ghostty` detected and supported
+- ✅ OK `ghostty` supports unicode placeholders
+- ✅ OK Inline images are available
+- ✅ OK `tmux` detected and supported
+- ✅ OK Terminal Dimensions:
+  - {size}: `3810` x `2046` pixels
+  - {scale}: `1.88`
+  - {cell}: `15` x `33` pixels
+- ✅ OK Available Treesitter languages:
+    `css`, `html`, `javascript`, `markdown_inline`, `markdown`, `tsx`
+- ⚠️ WARNING Missing Treesitter languages:
+    `latex`, `norg`, `scss`, `svelte`, `typst`, `vue`
+- ⚠️ WARNING Image rendering in docs with missing treesitter parsers won't work
+- ❌ ERROR Tool not found: 'gs'
+- ⚠️ WARNING `gs` is required to render PDF files
+- ❌ ERROR None of the tools found: 'tectonic', 'pdflatex'
+- ⚠️ WARNING `tectonic` or `pdflatex` is required to render LaTeX math expressions
+- ❌ ERROR Tool not found: 'mmdc'
+- ⚠️ WARNING `mmdc` is required to render Mermaid diagrams
+- ✅ OK your terminal supports the kitty graphics protocol
+
+Snacks.input ~
+- ✅ OK setup {enabled}
+- ✅ OK `vim.ui.input` is set to `Snacks.input`
+
+Snacks.lazygit ~
+- ✅ OK {lazygit} installed
+
+Snacks.notifier ~
+- ✅ OK setup {enabled}
+- ✅ OK is ready
+
+Snacks.picker ~
+- ⚠️ WARNING setup {disabled}
+- ⚠️ WARNING `vim.ui.select` for `Snacks.picker` is not enabled
+- ✅ OK Available Treesitter languages:
+    `regex`
+- ✅ OK 'git' `git version 2.39.5 (Apple Git-154)`
+- ✅ OK 'rg' `ripgrep 14.1.1`
+- ✅ OK `Snacks.picker.grep()` is available
+- ✅ OK 'fd' `fd 10.3.0`
+- ✅ OK `Snacks.picker.files()` is available
+- ✅ OK `Snacks.picker.explorer()` is available
+- ✅ OK `SQLite3` is available
+
+Snacks.quickfile ~
+- ✅ OK setup {enabled}
+
+Snacks.scope ~
+- ✅ OK setup {enabled}
+
+Snacks.scroll ~
+- ✅ OK setup {enabled}
+
+Snacks.statuscolumn ~
+- ⚠️ WARNING setup {disabled}
+
+Snacks.terminal ~
+- ✅ OK shell configured
+  - `vim.o.shell`: /bin/zsh
+  - `parsed`: { "/bin/zsh" }
+
+Snacks.toggle ~
+- ✅ OK {which-key} is installed
+
+Snacks.words ~
+- ✅ OK setup {enabled}
+
+==============================================================================
+vim.deprecated:                                                             ✅
+
+- ✅ OK No deprecated functions detected
+
+==============================================================================
+vim.health:                                                               1 ❌
+
+Configuration ~
+- ✅ OK no issues found
+
+Runtime ~
+- ✅ OK $VIMRUNTIME: /Users/sp/nvim-macos-arm64/share/nvim/runtime
+
+Performance ~
+- ✅ OK Build type: Release
+
+Remote Plugins ~
+- ✅ OK Up to date
+
+terminal ~
+- key_backspace (kbs) terminfo entry: `key_backspace=\177`
+- key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
+- $TERM_PROGRAM="tmux"
+- $COLORTERM="truecolor"
+
+tmux ~
+- ✅ OK escape-time: 10
+- ✅ OK focus-events: on
+- $TERM: xterm-ghostty
+- ❌ ERROR $TERM should be "screen-256color", "tmux-256color", or "tmux-direct" in tmux. Colors might look wrong.
+  - ADVICE:
+    - Set default-terminal in ~/.tmux.conf:
+      set-option -g default-terminal "screen-256color"
+    - https://github.com/neovim/neovim/blob/master/BUILD.md#building
+
+External Tools ~
+- ✅ OK ripgrep 14.1.1 (/opt/homebrew/bin/rg)
+
+==============================================================================
+vim.lsp:                                                                    ✅
+
+- LSP log level : WARN
+- Log path: /Users/sp/.local/state/nvim/lsp.log
+- Log size: 3489 KB
+
+vim.lsp: Active Clients ~
+- No active clients
+
+vim.lsp: Enabled Configurations ~
+
+vim.lsp: File Watcher ~
+- file watching "(workspace/didChangeWatchedFiles)" disabled on all clients
+
+vim.lsp: Position Encodings ~
+- No active clients
+
+==============================================================================
+vim.provider:                                                             6 ⚠️
+
+Clipboard (optional) ~
+- ✅ OK Clipboard tool found: pbcopy
+
+Node.js provider (optional) ~
+- Node.js: v22.20.0
+
+- ⚠️ WARNING Missing "neovim" npm (or yarn, pnpm) package.
+  - ADVICE:
+    - Run in shell: npm install -g neovim
+    - Run in shell (if you use yarn): yarn global add neovim
+    - Run in shell (if you use pnpm): pnpm install -g neovim
+    - You may disable this provider (and warning) by adding `let g:loaded_node_provider = 0` to your init.vim
+
+Perl provider (optional) ~
+- ⚠️ WARNING "Neovim::Ext" cpan module is not installed
+  - ADVICE:
+    - See :help |provider-perl| for more information.
+    - You can disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
+- ⚠️ WARNING No usable perl executable found
+
+Python 3 provider (optional) ~
+- ⚠️ WARNING No Python executable found that can `import neovim`. Using the first available executable for diagnostics.
+- ⚠️ WARNING Could not load Python :
+  /opt/homebrew/bin/python3 does not have the "neovim" module.
+  /opt/homebrew/bin/python3.13 does not have the "neovim" module.
+  /opt/homebrew/bin/python3.12 does not have the "neovim" module.
+  /usr/local/bin/python3.11 does not have the "neovim" module.
+  /opt/homebrew/bin/python3.10 does not have the "neovim" module.
+  python3.9 not found in search path or not executable.
+  python not found in search path or not executable.
+  - ADVICE:
+    - See :help |provider-python| for more information.
+    - You can disable this provider (and warning) by adding `let g:loaded_python3_provider = 0` to your init.vim
+- Executable: Not found
+
+Python virtualenv ~
+- ✅ OK no $VIRTUAL_ENV
+
+Ruby provider (optional) ~
+- Ruby: ruby 3.4.7 (2025-10-08 revision 7a5688e2a2) +PRISM [arm64-darwin24]
+- ⚠️ WARNING `neovim-ruby-host` not found.
+  - ADVICE:
+    - Run `gem install neovim` to ensure the neovim RubyGem is installed.
+    - Run `gem environment` to ensure the gem bin directory is in $PATH.
+    - If you are using rvm/rbenv/chruby, try "rehashing".
+    - See :help |g:ruby_host_prog| for non-standard gem installations.
+    - You can disable this provider (and warning) by adding `let g:loaded_ruby_provider = 0` to your init.vim
+
+==============================================================================
+vim.treesitter:                                                             ✅
+
+Treesitter features ~
+- Treesitter ABI support: min 13, max 15
+- WASM parser support: false
+
+Treesitter parsers ~
+- ✅ OK Parser: astro                     ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/astro.so
+- ✅ OK Parser: astro                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/astro.so
+- ✅ OK Parser: bash                      ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/bash.so
+- ✅ OK Parser: bash                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/bash.so
+- ✅ OK Parser: c                         ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/c.so
+- ✅ OK Parser: c                    (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/c.so
+- ✅ OK Parser: c                    (not loaded), path: /Users/sp/nvim-macos-arm64/lib/nvim/parser/c.so
+- ✅ OK Parser: css                       ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/css.so
+- ✅ OK Parser: css                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/css.so
+- ✅ OK Parser: diff                      ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/diff.so
+- ✅ OK Parser: diff                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/diff.so
+- ✅ OK Parser: dockerfile                ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/dockerfile.so
+- ✅ OK Parser: dockerfile           (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/dockerfile.so
+- ✅ OK Parser: dtd                       ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/dtd.so
+- ✅ OK Parser: git_config                ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/git_config.so
+- ✅ OK Parser: git_config           (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/git_config.so
+- ✅ OK Parser: go                        ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/go.so
+- ✅ OK Parser: go                   (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/go.so
+- ✅ OK Parser: gomod                     ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/gomod.so
+- ✅ OK Parser: gomod                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/gomod.so
+- ✅ OK Parser: gosum                     ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/gosum.so
+- ✅ OK Parser: gosum                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/gosum.so
+- ✅ OK Parser: gowork                    ABI: 13, path: /Users/sp/.local/share/nvim/site/parser/gowork.so
+- ✅ OK Parser: gowork               (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/gowork.so
+- ✅ OK Parser: graphql                   ABI: 13, path: /Users/sp/.local/share/nvim/site/parser/graphql.so
+- ✅ OK Parser: graphql              (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/graphql.so
+- ✅ OK Parser: hcl                       ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/hcl.so
+- ✅ OK Parser: hcl                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/hcl.so
+- ✅ OK Parser: html                      ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/html.so
+- ✅ OK Parser: html                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/html.so
+- ✅ OK Parser: http                      ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/http.so
+- ✅ OK Parser: http                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/http.so
+- ✅ OK Parser: javascript                ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/javascript.so
+- ✅ OK Parser: javascript           (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/javascript.so
+- ✅ OK Parser: jsdoc                     ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/jsdoc.so
+- ✅ OK Parser: jsdoc                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/jsdoc.so
+- ✅ OK Parser: json                      ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/json.so
+- ✅ OK Parser: json                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/json.so
+- ✅ OK Parser: json5                     ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/json5.so
+- ✅ OK Parser: json5                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/json5.so
+- ✅ OK Parser: jsonc                     ABI: 13, path: /Users/sp/.local/share/nvim/site/parser/jsonc.so
+- ✅ OK Parser: jsonc                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/jsonc.so
+- ✅ OK Parser: kulala_http               ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/kulala_http.so
+- ✅ OK Parser: lua                       ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/lua.so
+- ✅ OK Parser: lua                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/lua.so
+- ✅ OK Parser: lua                  (not loaded), path: /Users/sp/nvim-macos-arm64/lib/nvim/parser/lua.so
+- ✅ OK Parser: luadoc                    ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/luadoc.so
+- ✅ OK Parser: luadoc               (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/luadoc.so
+- ✅ OK Parser: luap                      ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/luap.so
+- ✅ OK Parser: luap                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/luap.so
+- ✅ OK Parser: markdown                  ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/markdown.so
+- ✅ OK Parser: markdown             (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/markdown.so
+- ✅ OK Parser: markdown             (not loaded), path: /Users/sp/nvim-macos-arm64/lib/nvim/parser/markdown.so
+- ✅ OK Parser: markdown_inline           ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/markdown_inline.so
+- ✅ OK Parser: markdown_inline      (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/markdown_inline.so
+- ✅ OK Parser: markdown_inline      (not loaded), path: /Users/sp/nvim-macos-arm64/lib/nvim/parser/markdown_inline.so
+- ✅ OK Parser: ninja                     ABI: 13, path: /Users/sp/.local/share/nvim/site/parser/ninja.so
+- ✅ OK Parser: ninja                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/ninja.so
+- ✅ OK Parser: printf                    ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/printf.so
+- ✅ OK Parser: printf               (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/printf.so
+- ✅ OK Parser: python                    ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/python.so
+- ✅ OK Parser: python               (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/python.so
+- ✅ OK Parser: query                     ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/query.so
+- ✅ OK Parser: query                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/query.so
+- ✅ OK Parser: query                (not loaded), path: /Users/sp/nvim-macos-arm64/lib/nvim/parser/query.so
+- ✅ OK Parser: regex                     ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/regex.so
+- ✅ OK Parser: regex                (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/regex.so
+- ✅ OK Parser: ron                       ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/ron.so
+- ✅ OK Parser: ron                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/ron.so
+- ✅ OK Parser: rst                       ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/rst.so
+- ✅ OK Parser: rst                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/rst.so
+- ✅ OK Parser: rust                      ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/rust.so
+- ✅ OK Parser: rust                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/rust.so
+- ✅ OK Parser: terraform                 ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/terraform.so
+- ✅ OK Parser: terraform            (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/terraform.so
+- ✅ OK Parser: toml                      ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/toml.so
+- ✅ OK Parser: toml                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/toml.so
+- ✅ OK Parser: tsx                       ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/tsx.so
+- ✅ OK Parser: tsx                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/tsx.so
+- ✅ OK Parser: typescript                ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/typescript.so
+- ✅ OK Parser: typescript           (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/typescript.so
+- ✅ OK Parser: vim                       ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/vim.so
+- ✅ OK Parser: vim                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/vim.so
+- ✅ OK Parser: vim                  (not loaded), path: /Users/sp/nvim-macos-arm64/lib/nvim/parser/vim.so
+- ✅ OK Parser: vimdoc                    ABI: 15, path: /Users/sp/.local/share/nvim/site/parser/vimdoc.so
+- ✅ OK Parser: vimdoc               (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/vimdoc.so
+- ✅ OK Parser: vimdoc               (not loaded), path: /Users/sp/nvim-macos-arm64/lib/nvim/parser/vimdoc.so
+- ✅ OK Parser: xml                       ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/xml.so
+- ✅ OK Parser: xml                  (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/xml.so
+- ✅ OK Parser: yaml                      ABI: 14, path: /Users/sp/.local/share/nvim/site/parser/yaml.so
+- ✅ OK Parser: yaml                 (not loaded), path: /Users/sp/.local/share/nvim/lazy/nvim-treesitter/parser/yaml.so
+
+==============================================================================
+which-key:                                                               13 ⚠️
+
+- ✅ OK Most of these checks are for informational purposes only.
+  WARNINGS should be treated as a warning, and don't necessarily indicate a problem with your config.
+  Please |DON'T| report these warnings as an issue.
+
+Checking your config ~
+- ✅ OK |mini.icons| is installed
+- ✅ OK |nvim-web-devicons| is installed
+
+Checking for issues with your mappings ~
+- ✅ OK No issues reported
+
+checking for overlapping keymaps ~
+- ⚠️ WARNING In mode `n`, <y> overlaps with <yS>, <ySS>, <ys>, <yss>:
+  - <y>: Yank Text
+  - <yS>: Add a surrounding pair around a motion, on new lines (normal mode)
+  - <ySS>: Add a surrounding pair around the current line, on new lines (normal mode)
+  - <ys>: Add a surrounding pair around a motion (normal mode)
+  - <yss>: Add a surrounding pair around the current line (normal mode)
+- ⚠️ WARNING In mode `n`, <c> overlaps with <cS>, <cs>:
+  - <c>: Dashboard action
+  - <cS>: Change a surrounding pair, putting replacements on new lines
+  - <cs>: Change a surrounding pair
+- ⚠️ WARNING In mode `n`, <g> overlaps with <g<C-X>>, <gp>, <g%>, <gP>, <gs>, <g[>, <gc>, <gco>, <gcc>, <gcO>, <g]>, <gri>, <grn>, <grr>, <grt>, <gra>, <gx>, <gO>, <g<C-A>>, <gzr>, <gzf>, <gzn>, <gzh>, <gzd>, <gzF>, <gza>:
+  - <g>: goto
+  - <g<C-X>>: Decrement
+  - <gp>: Put Text After Selection
+  - <g%>: Cycle backwards through results
+  - <gP>: Put Text Before Selection
+  - <gs>: surround
+  - <g[>: Move to left "around"
+  - <gc>: Toggle comment
+  - <gco>: Add Comment Below
+  - <gcc>: Toggle comment line
+  - <gcO>: Add Comment Above
+  - <g]>: Move to right "around"
+  - <gri>: vim.lsp.buf.implementation()
+  - <grn>: vim.lsp.buf.rename()
+  - <grr>: vim.lsp.buf.references()
+  - <grt>: vim.lsp.buf.type_definition()
+  - <gra>: vim.lsp.buf.code_action()
+  - <gx>: Open with system app
+  - <gO>: vim.lsp.buf.document_symbol()
+  - <g<C-A>>: Increment
+  - <gzr>: Replace Surrounding
+  - <gzf>: Find Right Surrounding
+  - <gzn>: Update `MiniSurround.config.n_lines`
+  - <gzh>: Highlight Surrounding
+  - <gzd>: Delete Surrounding
+  - <gzF>: Find Left Surrounding
+  - <gza>: Add Surrounding
+- ⚠️ WARNING In mode `n`, <<Space>R> overlaps with <<Space>Rs>, <<Space>Rb>, <<Space>Ra>:
+  - <<Space>R>: +kulala
+  - <<Space>Rs>: Send request
+  - <<Space>Rb>: Open scratchpad
+  - <<Space>Ra>: Send all requests
+- ⚠️ WARNING In mode `n`, <<Space>a> overlaps with <<Space>ad>, <<Space>af>, <<Space>ar>, <<Space>am>, <<Space>ab>, <<Space>aC>, <<Space>ac>, <<Space>aa>:
+  - <<Space>a>: AI/Claude Code
+  - <<Space>ad>: Deny diff
+  - <<Space>af>: Focus Claude
+  - <<Space>ar>: Resume Claude
+  - <<Space>am>: Select Claude model
+  - <<Space>ab>: Add current buffer
+  - <<Space>aC>: Continue Claude
+  - <<Space>ac>: Toggle Claude
+  - <<Space>aa>: Accept diff
+- ⚠️ WARNING In mode `n`, <<Space>sk> overlaps with <<Space>sks>, <<Space>skt>, <<Space>skc>, <<Space>skp>, <<Space>ska>:
+  - <<Space>sk>: Key Maps
+  - <<Space>sks>: Select CLI
+  - <<Space>skt>: Send This
+  - <<Space>skc>: Sidekick Toggle Claude
+  - <<Space>skp>: Sidekick Select Prompt
+  - <<Space>ska>: Sidekick Toggle CLI
+- ⚠️ WARNING In mode `x`, <a> overlaps with <a%>, <an>, <ai>, <al>:
+  - <a>: around
+  - <an>: next
+  - <ai>: indent
+  - <al>: last
+- ⚠️ WARNING In mode `x`, <i> overlaps with <ii>, <in>, <il>:
+  - <i>: inside
+  - <ii>: indent
+  - <in>: next
+  - <il>: last
+- ⚠️ WARNING In mode `o`, <a> overlaps with <ai>, <an>, <al>:
+  - <a>: around
+  - <ai>: indent
+  - <an>: next
+  - <al>: last
+- ⚠️ WARNING In mode `o`, <i> overlaps with <ii>, <in>, <il>:
+  - <i>: inside
+  - <ii>: indent
+  - <in>: next
+  - <il>: last
+- ⚠️ WARNING In mode `n`, <ys> overlaps with <yss>:
+  - <ys>: Add a surrounding pair around a motion (normal mode)
+  - <yss>: Add a surrounding pair around the current line (normal mode)
+- ⚠️ WARNING In mode `n`, <yS> overlaps with <ySS>:
+  - <yS>: Add a surrounding pair around a motion, on new lines (normal mode)
+  - <ySS>: Add a surrounding pair around the current line, on new lines (normal mode)
+- ⚠️ WARNING In mode `n`, <gc> overlaps with <gco>, <gcc>, <gcO>:
+  - <gc>: Toggle comment
+  - <gco>: Add Comment Below
+  - <gcc>: Toggle comment line
+  - <gcO>: Add Comment Above
+- ✅ OK Overlapping keymaps are only reported for informational purposes.
+  This doesn't necessarily mean there is a problem with your config.
+
+Checking for duplicate mappings ~
+- ✅ OK No duplicate mappings found
+

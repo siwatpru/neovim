@@ -10,7 +10,7 @@ return {
     { "<leader>h", false },
     { "<leader>H", false },
     {
-      "<leader>ah",
+      "<leader>H",
       function()
         require("harpoon"):list():add()
       end,
