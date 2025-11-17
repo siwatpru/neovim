@@ -26,9 +26,15 @@ return {
   },
   {
     "mason-org/mason-lspconfig.nvim",
-    opts = {},
+    opts = {
+      -- Ensure these servers are installed
+      ensure_installed = {
+        "pyright",
+        "vtsls",
+      },
+    },
     dependencies = {
-      { "mason-org/mason.nvim", opts = {} },
+      "mason-org/mason.nvim",
       "neovim/nvim-lspconfig",
     },
   },
