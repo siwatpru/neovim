@@ -57,7 +57,12 @@ return {
     {
       "<leader>fe",
       function()
-        require("neo-tree.command").execute({ toggle = true, dir = vim.uv.cwd(), position = "float" })
+        require("neo-tree.command").execute({
+          toggle = true,
+          dir = vim.uv.cwd(),
+          position = "float",
+          reveal_file = vim.api.nvim_buf_get_name(0),
+        })
       end,
       desc = "Explorer NeoTree (cwd)",
     },
