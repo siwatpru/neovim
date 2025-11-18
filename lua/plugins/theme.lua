@@ -1,10 +1,4 @@
 return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "ayu-light",
-    },
-  },
   -- {
   --   "catppuccin/nvim",
   --   name = "catppuccin",
@@ -49,14 +43,35 @@ return {
     priority = 1000,
     config = function()
       require("ayu").setup({
-        mirage = false,
+        mirage = true,
         terminal = false,
         overrides = {
           LineNr = { fg = "#ABB0B6" },
           CursorLineNr = { fg = "#55B4D4", bold = true },
         },
       })
+
+      -- Detect macOS appearance and set colorscheme
+      local handle = io.popen("defaults read -g AppleInterfaceStyle 2>/dev/null")
+      local result = handle:read("*a")
+      handle:close()
+
+      -- If result contains "Dark", use mirage, otherwise use light
+      if result:match("Dark") then
+        vim.cmd("colorscheme ayu-mirage")
+      else
+        vim.cmd("colorscheme ayu-light")
+      end
     end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = function()
+        -- Return empty string to prevent LazyVim from overriding our colorscheme
+        return ""
+      end,
+    },
   },
   -- {
   --   "folke/noice.nvim",
