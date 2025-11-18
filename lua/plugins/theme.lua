@@ -40,6 +40,7 @@ return {
   -- },
   {
     "Shatur/neovim-ayu",
+    lazy = false,
     priority = 1000,
     config = function()
       require("ayu").setup({
@@ -50,19 +51,19 @@ return {
           CursorLineNr = { fg = "#55B4D4", bold = true },
         },
       })
-
-      -- Detect macOS appearance and set colorscheme
-      local handle = io.popen("defaults read -g AppleInterfaceStyle 2>/dev/null")
-      local result = handle:read("*a")
-      handle:close()
-
-      -- If result contains "Dark", use mirage, otherwise use light
-      if result:match("Dark") then
-        vim.cmd("colorscheme ayu-mirage")
-      else
-        vim.cmd("colorscheme ayu-light")
-      end
     end,
+  },
+  {
+    "f-person/auto-dark-mode.nvim",
+    opts = {
+      update_interval = 1000,
+      set_dark_mode = function()
+        vim.cmd("colorscheme ayu-mirage")
+      end,
+      set_light_mode = function()
+        vim.cmd("colorscheme ayu-light")
+      end,
+    },
   },
   {
     "LazyVim/LazyVim",
