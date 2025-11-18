@@ -2,24 +2,24 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "ayu-light",
     },
   },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
-    config = function()
-      require("catppuccin").setup({
-        flavour = "frappe",
-        transparent_background = true,
-        float = {
-          transparent = true,
-          solid = false,
-        },
-      })
-    end,
-  },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   priority = 1000,
+  --   config = function()
+  --     require("catppuccin").setup({
+  --       flavour = "frappe",
+  --       transparent_background = true,
+  --       float = {
+  --         transparent = true,
+  --         solid = false,
+  --       },
+  --     })
+  --   end,
+  -- },
   {
     "folke/noice.nvim",
     opts = {
@@ -44,21 +44,20 @@ return {
   --     vim.cmd("colorscheme adwaita")
   --   end,
   -- },
-  -- {
-  --   "Shatur/neovim-ayu",
-  --   config = function()
-  --     require("ayu").setup({
-  --       mirage = false,
-  --       terminal = false,
-  --     })
-  --   end,
-  -- },
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "ayu",
-  --   },
-  -- },
+  {
+    "Shatur/neovim-ayu",
+    priority = 1000,
+    config = function()
+      require("ayu").setup({
+        mirage = false,
+        terminal = false,
+        overrides = {
+          LineNr = { fg = "#ABB0B6" },
+          CursorLineNr = { fg = "#55B4D4", bold = true },
+        },
+      })
+    end,
+  },
   -- {
   --   "folke/noice.nvim",
   --   config = function()
